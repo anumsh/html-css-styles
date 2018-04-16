@@ -1,0 +1,46 @@
+Calculating Specificity:
+     The Higher the specificity weight of a selector, the most superiority the selector is given when a styling conflict occurs.
+     ID selector: hold the oint value of 1-0-0.
+     Class selector: hold the value of 0-1-0.
+     Type selector: hold the value of 0-0-1.
+     
+     For example: if the paragraph element is slected usinh type slector in one place and an ID selector in another place, the ID selector will take the precedence over type selector.
+     
+     
+     The Cascade:
+     
+     p
+     {
+     background:orange;
+     font-size:24px;
+     }
+     
+     p {
+     background: green;
+     }
+     
+     in above example:  paragraph selector that sets the background color to green comes after the paragraph selector that sets the background color to orange, it will take precedence. 
+     
+     green background will appear.
+     
+     
+     combining selector:
+     
+     HTML
+
+<div class="hotdog">
+  <p>...</p>
+  <p>...</p>
+  <p class="mustard">...</p>
+</div>
+
+              
+CSS
+
+.hotdog p {
+  background: brown;
+}
+.hotdog p.mustard {
+  background: yellow;
+}
+
