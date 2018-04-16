@@ -4,4 +4,5 @@ This repository consists of practise exercises from the book- Learn HTML and CSS
 
 Lessons:
 1. Building Your First Web Page.
+2. Getting to know HTML
         
