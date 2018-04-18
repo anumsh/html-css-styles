@@ -6,7 +6,7 @@ Calculating Specificity:
      
      For example: if the paragraph element is slected usinh type slector in one place and an ID selector in another place, the ID selector will take the precedence over type selector.
      
-     
+ -------------------------------------------------------------------------------------------------------------------------------------    
      The Cascade:
      
      p
@@ -22,7 +22,7 @@ Calculating Specificity:
      in above example:  paragraph selector that sets the background color to green comes after the paragraph selector that sets the background color to orange, it will take precedence. 
      
      green background will appear.
-     
+-----------------------------------------------------------------------------------------------------------------------------------     
      
      combining selector:
      
@@ -44,3 +44,57 @@ CSS
   background: yellow;
 }
 
+new class selector, mustard, falls all the way to the right of the combined selector, it is the key selector, and all of the individual selectors coming before it are now prequalifiers.
+---------------------------------------------------------------------------------------------------------------
+
+Using multiple classes, we can layer on as many styles as we wish, keeping our code lean and our specificity weights low. 
+
+HTML 
+
+<a class="btn btn-danger">...</a>
+<a class="btn btn-success">...</a>
+
+              
+CSS
+
+.btn {
+  font-size: 16px;
+}
+.btn-danger {
+  background: red;
+}
+.btn-success {
+  background: green;
+}
+
+              
+------------------------------------------------------------------------------------------------------------------------
+
+BOX MODEL:
+
+Let’s look these properties inside some code:
+
+div {
+  border: 6px solid #949599;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+}
+
+              
+According to the box model, the total width of an element can be calculated using the following formula:
+
+
+margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
+
+              
+In comparison, according to the box model, the total height of an element can be calculated using the following formula:
+
+
+margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom
+
+Using the formulas, we can find the total height and width of our example code.
+
+Width: 492px = 20px + 6px + 20px + 400px + 20px + 6px + 20px
+Height: 192px = 20px + 6px + 20px + 100px + 20px + 6px + 20px
