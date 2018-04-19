@@ -49,3 +49,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*
+GRID
+*/
+
+*,
+*:before,
+*:after {
+    
+    -webkit-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+}
